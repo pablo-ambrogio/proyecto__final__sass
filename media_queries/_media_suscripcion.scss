@@ -1,0 +1,19 @@
+@media screen and (max-width: 576px) {
+
+    .contenedor__suscripcion__full {
+        height: 30rem;
+    }
+    .contenedor__suscripcion {
+        width: 80%;
+        height: 20rem;
+        .suscripcion__email {
+            flex-direction: column;
+            height: auto;
+            .email, .email__btn {
+                width: 100%;
+                padding: .8rem;
+            }
+        }
+    }
+    
+}

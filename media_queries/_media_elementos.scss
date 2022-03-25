@@ -1,0 +1,12 @@
+@media screen and (max-width: 576px) {
+    .contenedor__elementos__full {
+        height: 55rem;
+    }
+
+    .contenedor__elementos{
+        width: 100%;
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+}

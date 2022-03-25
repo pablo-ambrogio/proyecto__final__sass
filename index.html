@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Sass</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="contenedor__nav">
+        <nav class="navbar">
+            <input type="checkbox" name="" id="menu" />
+            <label for="menu"
+            ><img class="img__menu" src="./img/iconos/icons8-menú.svg" alt=""
+            /></label>
+            <a href="./index.html"
+            ><img class="img__logo" src="img/logo.png" alt="logo"
+            /></a>
+            <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li>
+                <a href="">Productos</a>
+                <ul>
+                <li><a href="">Anillos</a></li>
+                <li><a href="">Aros</a></li>
+                <li><a href="">Collares</a></li>
+                </ul>
+            </li>
+            <li><a href="">Sobre nosotros</a></li>
+            <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SLIDER -->
+    <section class="container__full__slider">
+        <div class="contianer__slider">
+            <div class="slider" id="slider--01">
+            <img
+                class="slider__img"
+                src="./img/slider/img_slider-01.jpg"
+                alt=""
+            />
+            <div class="slider__arrows">
+                <a href="#slider--03"
+                ><img class="arrow" src="./img/arrows/left_arrow.png" alt=""
+                /></a>
+                <a href="#slider--02"
+                ><img class="arrow" src="./img/arrows/right_arrow.png" alt=""
+                /></a>
+            </div>
+            <div class="slider__textos">
+                <h3 class="slider__textos__h3">Joyeria</h3>
+                <p class="slider__textos__p">Para tus sentimientos.</p>
+                <a class="slider__textos__btn" href="">Ver productos</a>
+            </div>
+            </div>
+            <div class="slider" id="slider--02">
+            <img
+                class="slider__img"
+                src="./img/slider/img_slider-02.jpg"
+                alt=""
+            />
+            <div class="slider__arrows">
+                <a href="#slider--01"
+                ><img class="arrow" src="./img/arrows/left_arrow.png" alt=""
+                /></a>
+                <a href="#slider--03"
+                ><img class="arrow" src="./img/arrows/right_arrow.png" alt=""
+                /></a>
+            </div>
+            <div class="slider__textos">
+                <h3 class="slider__textos__h3">Joyeria</h3>
+                <p class="slider__textos__p">Para tus sentimientos.</p>
+                <a class="slider__textos__btn" href="">Ver productos</a>
+            </div>
+            </div>
+            <div class="slider" id="slider--03">
+            <img
+                class="slider__img"
+                src="./img/slider/img_slider-03.jpg"
+                alt=""
+            />
+            <div class="slider__arrows">
+                <a href="#slider--02"
+                ><img class="arrow" src="./img/arrows/left_arrow.png" alt=""
+                /></a>
+                <a href="#slider--01"
+                ><img class="arrow" src="./img/arrows/right_arrow.png" alt=""
+                /></a>
+            </div>
+            <div class="slider__textos">
+                <h3 class="slider__textos__h3">Joyeria</h3>
+                <p class="slider__textos__p">Para tus sentimientos.</p>
+                <a class="slider__textos__btn" href="">Ver productos</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <main>
+        <section class="contenedor__elementos__full">
+            <div class="contenedor__elementos">
+                <div class="elemento borde__amarillo">
+                    <img class="elemento__img" src="./img/section-img/logo1.jpg" alt=""/>
+                    <div class="elemento__linea">_ _ _ _ _ _ _</div>
+                    <h4 class="elemento__titulo">Más vendido</h4>
+                    <div class="elemento__hover bg__amarillo">
+                        <a class="elemento__btn" href="">Más vendido</a>
+                    </div>
+                </div>
+                <div class="elemento borde__verde">
+                    <img
+                    class="elemento__img"
+                    src="./img/section-img/logo2.jpg"
+                    alt=""
+                    />
+                    <div class="elemento__linea">_ _ _ _ _ _ _</div>
+                    <h4 class="elemento__titulo">Nuevo</h4>
+                    <div class="elemento__hover bg__verde">
+                    <a class="elemento__btn" href="">Nuevo</a>
+                    </div>
+                </div>
+                <div class="elemento borde__gris">
+                    <img
+                    class="elemento__img"
+                    src="./img/section-img/logo3.jpg"
+                    alt=""
+                    />
+                    <div class="elemento__linea">_ _ _ _ _ _ _</div>
+                    <h4 class="elemento__titulo">Coleccion</h4>
+                    <div class="elemento__hover bg__gris">
+                    <a class="elemento__btn" href="">Coleccion</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- banner -->
+
+        <section class="contenedor__banner">
+            <div class="banner no__responsive">
+                <img class="banner__img" src="./img/banner/Banner-MolayPoliticas-1536x235.jpg" alt="" />
+            </div>
+            <div class="banner responsive">
+                <img class="banner__img" src="./img/banner/Banner-responsive-web.png" alt=""/>
+            </div>
+        </section>
+
+        <!-- destacada -->
+
+        <section class="contenedor__destacada__full">
+            <div class="contenedor__destacada">
+                <section class="contenedor__titulos__productos">
+                    <div class="contenedor__titulos">
+                        <i class="titulo__cursiva">hecho con amor</i>
+                        <div class="arrows">
+                            <img src="./img/destacada/Arrow-1.png" alt="" />
+                        </div>
+                        <h3 class="titulo">Joyería destacada</h3>
+                        <div class="linea__separadora">________</div>
+                    </div>
+                    <div class="contenedor__productos">
+                        <div class="contenedor__producto">
+                            <div class="producto__imagen">
+                                <img class="imagen" src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg" alt=""/>
+                            </div>
+                            <a class="producto__categoria" href="">Collares</a>
+                            <p class="producto__nombre">Collar de mamá e hija</p>
+                            <span class="producto__precio">$32.00 - $42.00</span>
+                        </div>
+                    <div class="contenedor__producto">
+                        <div class="producto__imagen">
+                        <img
+                            src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg"
+                            alt=""
+                        />
+                        </div>
+                        <a class="producto__categoria" href="">Collares</a>
+                        <p class="producto__nombre">Collar de mamá e hija</p>
+                        <span class="producto__precio">$32.00 - $42.00</span>
+                    </div>
+                    <div class="contenedor__producto">
+                        <div class="producto__imagen">
+                        <img
+                            class="imagen"
+                            src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg"
+                            alt=""
+                        />
+                        </div>
+                        <a class="producto__categoria" href="">Collares</a>
+                        <p class="producto__nombre">Collar de mamá e hija</p>
+                        <span class="producto__precio">$32.00 - $42.00</span>
+                    </div>
+                    </div>
+                </section>
+                <aside class="contenedor__aside">
+                    <div class="aside__imagen">
+                    <img src="./img/destacada/IMG_6531-1-1.jpg" alt="" />
+                    <button class="aside__button">
+                        <input type="button" value="Comprar ahora" />
+                    </button>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- destacada 2 -->
+            <div class="contenedor__destacada__2">
+                <section class="contenedor__titulos__productos">
+                    <div class="contenedor__titulos">
+                        <i class="titulo__cursiva">hecho con amor</i>
+                        <div class="arrows">
+                            <img src="./img/destacada/Arrow-1.png" alt="" />
+                        </div>
+                        <h3 class="titulo">Joyería destacada</h3>
+                        <div class="linea__separadora">________</div>
+                    </div>
+                    <div class="contenedor__productos">
+                        <div class="contenedor__producto">
+                            <div class="producto__imagen">
+                                <img class="imagen" src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg" alt=""/>
+                            </div>
+                            <a class="producto__categoria" href="">Collares</a>
+                            <p class="producto__nombre">Collar de mamá e hija</p>
+                            <span class="producto__precio">$32.00 - $42.00</span>
+                        </div>
+                        <div class="contenedor__producto">
+                            <div class="producto__imagen">
+                                <img src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg" alt=""/>
+                            </div>
+                            <a class="producto__categoria" href="">Collares</a>
+                            <p class="producto__nombre">Collar de mamá e hija</p>
+                            <span class="producto__precio">$32.00 - $42.00</span>
+                        </div>
+                        <div class="contenedor__producto">
+                            <div class="producto__imagen">
+                                <img class="imagen" src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg" alt=""/>
+                            </div>
+                            <a class="producto__categoria" href="">Collares</a>
+                            <p class="producto__nombre">Collar de mamá e hija</p>
+                            <span class="producto__precio">$32.00 - $42.00</span>
+                        </div>
+                    </div>
+                </section>
+                <aside class="contenedor__aside">
+                    <div class="aside__imagen">
+                        <img src="./img/destacada/IMG_6531-1-1.jpg" alt="" />
+                        <button class="aside__button">
+                            <input type="button" value="Comprar ahora" />
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- colecciones -->
+        <section class="contenedor__colecciones__full">
+            <div class="contenedor__colecciones">
+                <div class="colecciones__textos">
+                    <i class="coleccion__texto">compra las</i>
+                    <h4 class="coleccion__titulo">colecciones favoritas</h4>
+                    <div class="coleccion__linea__separadora">___________</div>
+                </div>
+                <div class="contenedor__coleccion">
+                    <div class="coleccion__imagen">
+                        <img src="./img/colecciones-fav/IMG_6357-1.jpg" alt="">
+                    </div>
+                    <div class="coleccion__descripcion absolute__uno">
+                        <h4 class="descripcion__coleccion">Nueva colección</h4>
+                        <p class="descripcion__titulo">Joyería</p>
+                        <a class="descripcion__explore" href="">Explore</a>
+                    </div>
+                </div>
+                <div class="contenedor__coleccion__dos">
+                    <div class="coleccion__imagen">
+                        <img src="./img/colecciones-fav/IMG_6357-1.jpg" alt="">
+                    </div>
+                    <div class="coleccion__descripcion absolute__dos">
+                        <h4 class="descripcion__coleccion">Nueva colección</h4>
+                        <p class="descripcion__titulo">Joyeria</p>
+                        <a class="descripcion__explore" href="">Explore</a>
+                    </div>
+                </div>
+                <div class="colecciones__button">
+                    <a href="">Ver todas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- vinculos -->
+        <section class="contenedor__vinculos">
+            <div class="vinculos">
+                <div class="vinculos__textos">
+                    <h4 class="texto__pulsera"><i>Pulseras</i></h4>
+                    <h3 class="texto__frase">Que crean vínculos para siempre</h3>
+                    <input class="vinculo__boton" type="button" value="Comprar ahora">
+                </div>
+            </div>
+        </section>
+
+        <!-- suscripcion -->
+        <section class="contenedor__suscripcion__full">
+            <div class="contenedor__suscripcion">
+                <h4 class="suscripcion__titulo">Suscríbete en Athenea Joyas</h4>
+                <p class="suscripcion__info">Manténgase informado sobre los últimos consejos de estilo y lanzamientos de productos. <a>Política de protección de datos.</a></p>
+                <form class="suscripcion__email">
+                    <input class="email" type="email" name="" id="" placeholder="Tu correo electrónico">
+                    <input class="email__btn" type="button" value="Enviar">
+                </form>
+                <div class="contenedor__iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+</body>
+</html>

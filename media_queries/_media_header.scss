@@ -1,0 +1,44 @@
+@media screen and (max-width: 576px) {
+    // Menu
+    .contenedor__nav {
+        height: 50px;
+
+        .navbar {
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+
+            ul{
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #fff;
+                z-index: 999;
+            }
+
+            .img__menu {
+                display: block;
+                width: 2.5rem;
+                margin-right: 1.5rem;
+                height: auto;
+                margin-top: 2px;
+            }
+
+            label {
+                align-self: end;
+            }
+            
+            .img__logo {
+                display: none;
+            }
+
+            #menu {
+                &:checked ~ ul {
+                    display: block;
+                }
+            }
+        }
+
+    }
+}
+    

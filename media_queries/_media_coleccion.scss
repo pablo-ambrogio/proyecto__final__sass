@@ -1,0 +1,51 @@
+@media screen and (max-width: 576px) {
+    .contenedor__colecciones__full {
+        height: auto;
+        // margin-bottom: 0;
+
+        .contenedor__colecciones {
+            width: 80%;
+            // height: auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 8rem auto auto 6rem;
+            grid-template-areas: 
+            'titulo'
+            'coleccion-uno'
+            'coleccion-dos'
+            'boton';
+        }
+    }
+
+    .coleccion__imagen {
+        width: 100%;
+        height: 90%;
+        margin-right: 0;
+    }
+
+    .contenedor__coleccion {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contenedor__coleccion__dos {
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .absolute__uno, .absolute__dos {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    .coleccion__descripcion {
+        align-self: flex-start;
+    }
+
+
+}

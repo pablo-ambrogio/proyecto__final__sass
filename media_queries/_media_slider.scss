@@ -1,0 +1,23 @@
+@media screen and (max-width: 576px) {
+    
+    // Slider
+    .container__full__slider {
+        height: 400px;
+
+        .slider__textos {
+            padding-right: 2.2rem;
+
+            .slider__textos__h3 {
+                font-size: 2rem;
+            }
+        
+            .slider__textos__p {
+                font-size: 1.2rem;
+            }
+        
+            .slider__textos__btn {
+                font-size: .8rem;
+            }
+        }
+}
+}

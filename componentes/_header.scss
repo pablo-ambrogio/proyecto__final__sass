@@ -1,0 +1,68 @@
+.contenedor__nav {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.397);
+}
+
+#menu, .img__menu {
+    display: none;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+
+    .img__logo {
+        width: 80px;
+    }
+
+    ul {
+        width: 50%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        li {
+            position: relative;
+
+            &:hover ul {
+                display: block;
+                z-index: 1;
+            }
+
+            a {
+                display: block;
+                padding: .8rem 1.2rem;
+                text-decoration: none;
+                text-transform: uppercase; 
+            }
+
+            ul {
+                width: auto;
+                position: absolute;
+                // top: 0;
+                display: none;
+                flex-direction: column;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(128, 128, 128, 0.397);
+                // visibility: hidden;
+
+                li {
+                    margin: 0;
+                    a {
+                        display: block;
+                        padding: .8rem 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* sass --watch scss/style.scss css/style.css */

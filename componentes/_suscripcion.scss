@@ -1,0 +1,81 @@
+.contenedor__suscripcion__full {
+    width: 100%;
+    height: 20rem;
+    background-color: #f2e6e2;
+
+    position: relative;
+}
+
+.contenedor__suscripcion {
+    width: 55%;
+    height: 15rem;
+    // background-color: #a8a5a4;
+    text-align: center;
+
+    display: grid;
+    gap: 1rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .suscripcion__titulo {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: $color-negro;
+        letter-spacing: 1px;
+    }
+
+    .suscripcion__info {
+        color: $color-negro;
+
+        a {
+            color: #269fb7;
+            text-decoration: underline;
+        }
+    }
+
+    .suscripcion__email {
+        width: 100%;
+        height: 2.6rem;
+        display: flex;
+        gap: .5rem;
+
+        .email {
+            width: 75%;
+            padding: .5rem;
+            outline: none;
+            // border: 1px solid rgba(0, 0, 0, 0.2);
+            border: none;
+            border-radius: 3px;
+        }
+
+        .email__btn {
+            width: 25%;
+            height: auto;
+            padding: .5rem;
+            // border: 1px solid $color-verde;
+            border: none;
+            font-size: 1rem;
+            background-color: $color-verde;
+            color: $color-blanco;
+            border-radius: 3px;
+        }
+    }
+
+    .contenedor__iconos {
+        width: 100%;
+        height: auto;
+        // background-color: magenta;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        svg {
+            width: 25px;
+        }
+        // width="16" height="16"
+    }
+}

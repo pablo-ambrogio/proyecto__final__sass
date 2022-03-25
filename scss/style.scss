@@ -1,0 +1,26 @@
+// Globales
+@import "../globales/reset.scss";
+@import "../globales/variables";
+
+// Componentes
+@import "../componentes/header";
+@import "../componentes/slider";
+@import "../componentes/seccion_elementos";
+@import "../componentes/banner";
+@import "../componentes/destacada";
+@import "../componentes/coleccion";
+@import "../componentes/vinculos";
+@import "../componentes/suscripcion"; 
+
+// Media Queries
+@import "../media_queries/media_slider";
+@import "../media_queries/media_header";
+@import "../media_queries/media_elementos";
+@import "../media_queries/media__banner";
+@import "../media_queries/media_destacada";
+@import "../media_queries/media_coleccion";
+@import "../media_queries/media_vinculos";
+@import "../media_queries/media_suscripcion";
+
+
+

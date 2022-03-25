@@ -1,0 +1,151 @@
+.contenedor__colecciones__full {
+    width: 100%;
+    height: 60rem;
+    // background-color: mediumorchid;
+    background-image: url(../img/colecciones-fav/slider_home_ph2.png);
+    background-repeat: no-repeat;
+    object-position: center bottom;
+    background-size: cover;
+
+    .contenedor__colecciones {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px auto 100px;
+        grid-template-areas: 
+        'titulo titulo'
+        'coleccion-uno coleccion-dos'
+        'boton boton';
+        // background-color: mediumspringgreen;
+    }
+}
+
+.colecciones__textos {
+    grid-area: titulo;
+    // background-color: mediumvioletred;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .coleccion__texto {
+        color: $color-blanco;
+        font-size: 2rem;
+    }
+
+    .coleccion__titulo {
+        color: $color-negro;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .coleccion__linea__separadora {
+        color: $color-blanco;
+    }
+}
+
+.contenedor__coleccion {
+    width: 100%;
+    height: 100%;
+    grid-area: coleccion-uno;
+    // background-color: mediumslateblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    position: relative;
+}
+.absolute__uno {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    transform: translate(-2%, -40%);
+}
+
+.contenedor__coleccion__dos {
+    width: 100%;
+    height: 100%;
+    grid-area: coleccion-dos;
+    // background-color: mediumseagreen;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: relative;
+}
+
+.absolute__dos {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translate(-2%, -60%);
+}
+
+// contenedor imagen
+.coleccion__imagen {
+    width: 65%;
+    height: 75%;
+    // width: 350px;
+    // height: 550px;
+    // background-color: rgb(135, 211, 85);
+    margin-right: 3rem;
+    
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// contenedor descripcion
+.coleccion__descripcion {
+    width:  150px;
+    height: auto;
+    // background-color: mediumblue;
+
+    
+    .descripcion__coleccion {
+        font-size: 2rem;
+        color: $color-blanco;
+        letter-spacing: 2px;
+    }
+
+    .descripcion__titulo {
+        font-size: 1.8rem;
+        color: $color-amarillo;
+        text-transform: uppercase;
+        margin-bottom: 1.1rem;
+    }
+
+    .descripcion__explore {
+        font-size: .9rem;
+        color: $color-blanco;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
+
+// boton 
+.colecciones__button {
+    grid-area: boton;
+    width: 100%;
+    // background-color: mistyrose;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    a {
+        text-transform: uppercase;
+        font-size: .9rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        color: $color-blanco;
+        background-color: $color-amarillo;
+    }
+}

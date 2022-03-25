@@ -1,0 +1,56 @@
+.contenedor__vinculos {
+    width: 100%;
+    height: 40rem;
+    // background-color: mediumslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vinculos {
+    width: 70%;
+    height: 85%;
+    background-color: rgb(148, 75, 52);
+    background-image: url(../img/vinculos/IMG_6298-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    .vinculos__textos {
+        width: 100%;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        // background-color: mediumspringgreen;
+        text-align: center;
+        display: grid;
+        gap: 1rem;
+
+        .texto__pulsera {
+            font-size: 1.5rem;
+            color: $color-blanco;
+        }
+
+        .texto__frase {
+            color: $color-blanco;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .vinculo__boton {
+            width: min-content;
+            height: auto;
+            margin: 0 auto;
+            background-color: $color-amarillo;
+            color: $color-blanco;
+            padding: .8rem 1.5rem;
+            text-transform: uppercase;
+            border: 0;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+    }
+}
