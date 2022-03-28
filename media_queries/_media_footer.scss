@@ -1,0 +1,16 @@
+@media screen and (max-width: 576px) {
+    
+    .contenedor__footer {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .footer__info {
+        margin: 2rem 0;
+    }
+}

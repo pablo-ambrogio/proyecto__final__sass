@@ -6,6 +6,8 @@
     flex-direction: column;
     gap: 10rem;
     background-image: url(../img/destacada/Grupo-13333.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 
     .contenedor__destacada {
         width: 80%;
