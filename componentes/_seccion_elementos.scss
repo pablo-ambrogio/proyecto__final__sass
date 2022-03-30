@@ -1,61 +1,44 @@
 .contenedor__elementos__full {
-    width: 100%;
-    height: 28rem;
-    background-image: url(../img/section-img/Capa-24.png);
-    // object-fit: contain;
+    @include width-height (100%, 28rem);
+    background: url(../img/section-img/Capa-24.png) no-repeat left center;
     background-size: auto;
-    background-position: left center;
-    background-repeat: no-repeat;
 }
 
 .contenedor__elementos {
-    width: 70%;
-    height: inherit;
+    @include width-height (70%, inherit);
     margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+    @include d__flex(row, space-around, center);
+    
     .elemento {
-        width: 250px;
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
+        @include width-height (250px, 250px);
+        @extend %d-flex__column;
         position: relative;
 
         .elemento__img {
-            width: 90px;
-            height: auto;
+            @include width-height (90px, auto);
+            mix-blend-mode: multiply; // Quita fondo de imagen ("la convierte en PNG")
         }
 
         .elemento__linea {
-            // width: 40%;
-            // border: 2px dashed yellow;
-            color: rgb(73, 73, 66);
+            // color: rgb(73, 73, 66);
             font-size: 20px;
-            margin-top: .3rem;
-            margin-bottom: 1rem;
-            font-weight: bolder;
+            margin: .7rem 0;
+            // margin-top: .3rem;
+            // margin-bottom: 1rem;
+            // font-weight: 700;
             justify-self: center;
         }
 
         .elemento__titulo {
             font-size: 1.1rem;
             text-transform: uppercase;
-            font-weight: lighter;
+            font-weight: 300;
         }
 
         .elemento__hover {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include p-absolute (0, 0);
+            @include width-height (100%, 100%);
+            @extend %d-flex__row;
             opacity: 0;
             
             transition: all .3s linear;
@@ -74,7 +57,7 @@
         }
     }
 
-    // BORDE
+    // borde
     .borde__amarillo {
         border: 2px solid #eabb6b;
     }
@@ -85,7 +68,7 @@
         border: 2px solid #d1cdc2;
     }
 
-    // BACKGROUND 
+    // background 
     .bg__amarillo {
         background-color: #eabb6b;
     }
@@ -94,6 +77,17 @@
     }
     .bg__gris {
         background-color: #d1cdc2;
+    }
+
+     // color 
+    .elemento__linea--amarillo {
+        color: #eabb6b;
+    }
+    .elemento__linea--verde {
+        color: #3b8284;
+    }
+    .elemento__linea--gris {
+        color: #d1cdc2;
     }
 
 }

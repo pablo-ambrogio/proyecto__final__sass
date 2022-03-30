@@ -1,23 +1,18 @@
 .contenedor__suscripcion__full {
-    width: 100%;
-    height: 20rem;
+    @include width-height (100%, 20rem);
     background-color: #f2e6e2;
 
     position: relative;
 }
 
 .contenedor__suscripcion {
-    width: 55%;
-    height: 15rem;
-    // background-color: #a8a5a4;
+    @include width-height (55%, 15rem);
     text-align: center;
 
     display: grid;
     gap: 1rem;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    @include p-absolute (50%, 50%);
     transform: translate(-50%, -50%);
 
     .suscripcion__titulo {
@@ -37,8 +32,7 @@
     }
 
     .suscripcion__email {
-        width: 100%;
-        height: 2.6rem;
+        @include width-height (100%, 2.6rem);
         display: flex;
         gap: .5rem;
 
@@ -46,16 +40,13 @@
             width: 75%;
             padding: .5rem;
             outline: none;
-            // border: 1px solid rgba(0, 0, 0, 0.2);
             border: none;
             border-radius: 3px;
         }
 
         .email__btn {
-            width: 25%;
-            height: auto;
+            @include width-height (25%, auto);
             padding: .5rem;
-            // border: 1px solid $color-verde;
             border: none;
             font-size: 1rem;
             background-color: $color-verde;
@@ -65,11 +56,8 @@
     }
 
     .contenedor__iconos {
-        width: 100%;
-        height: auto;
-        // background-color: magenta;
+        @include width-height (100%, auto);
         display: flex;
-        // align-items: center;
         justify-content: center;
         gap: 2rem;
 

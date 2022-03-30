@@ -1,0 +1,21 @@
+
+// display flex (row, justify-content, aling-items) 
+@mixin d__flex ($direccion, $justify-content, $aling-items) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify-content;
+    align-items: $aling-items;
+}
+
+// width - height 
+@mixin width-height ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+// position absolute 
+@mixin p-absolute ($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}

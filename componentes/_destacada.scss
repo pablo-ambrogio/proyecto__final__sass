@@ -1,12 +1,10 @@
 .contenedor__destacada__full {
-    width: 100%;
-    height: auto;
+    @include width-height (100%, auto);
     margin: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 10rem;
-    background-image: url(../img/destacada/Grupo-13333.png);
-    background-repeat: no-repeat;
+    background: url(../img/destacada/Grupo-13333.png) no-repeat;
     background-size: contain;
 
     .contenedor__destacada {
@@ -38,16 +36,14 @@
 
 // titulos
 .contenedor__titulos {
-    width: 85%;
-    height: auto;
-    // background-color: mediumvioletred;
+    @include width-height (85%, auto);
     text-align: center;
     margin: 0 auto 1.5rem;
     position: relative;
 
     .titulo__cursiva {
         font-size: 1.5rem;
-        color: $color-amarillo;
+        color: map-get($colores, amarillo);
     }
 
     .arrows {
@@ -64,17 +60,14 @@
     .titulo {
         font-size: 1.5rem;
         text-transform: uppercase;
-        color: $color-negro;
+        color: map-get($colores, negro);
+        // color: $color-negro;
         margin: .5rem 0;
-        color: $color-negro;
     }
 
     .linea__separadora {
-        // width: 10%;
-        // border: .05px solid $color-amarillo;
-        // margin: 0 auto;
         text-align: center;
-        color: $color-amarillo;
+        color: map-get($colores, amarillo);
     }
 }
 
@@ -87,8 +80,7 @@
     justify-content: space-between;
 
     .contenedor__producto {
-        width: 200px;
-        height: 280px;
+        @include width-height (200px, 280px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -96,20 +88,18 @@
         // background-color: moccasin;
 
         .producto__imagen {
-            width: inherit;
-            height: 200px;
+            @include width-height (inherit, 200px);
             // font-size: 0;
 
             img {
-                width: inherit;
-                height: inherit;
+                @include width-height (inherit, inherit);
             }
         }
     }
 
     .producto__categoria {
         text-decoration: none;
-        color: $color-amarillo;
+        color: map-get($colores, amarillo);
         display: inline-block;
         // margin-top: .5rem;
     }
@@ -117,13 +107,13 @@
     .producto__nombre {
         text-transform: uppercase;
         font-size: 1rem;
-        color: $color-negro;
+        color: map-get($colores, negro);
         // margin: .5rem 0;
     }
 
     .producto__precio {
         font-size: 1rem;
-        color: $color-negro;
+        color: map-get($colores, negro);
     }
 
 }
@@ -131,23 +121,18 @@
 // aside
 .contenedor__aside {
     grid-area: imagen;
-    width: 100%;
-    height: auto;
+    @include width-height (100%, auto);
 
     .aside__imagen {
-        width: 100%;
-        height: 550px;
+        @include width-height (100%, 550px);
         position: relative;
         img {
-            width: inherit;
-            height: inherit;
+            @include width-height (inherit, inherit);
             object-fit: cover;
         }
 
         .aside__button {
-            position: absolute;
-            top: 85%;
-            left:0;
+            @include p-absolute (85%, 0);
             width: 100%;
             margin: 0 auto;
             background-color: transparent;
@@ -163,7 +148,7 @@
                 font-size: 1rem;
                 letter-spacing: 1px;
                 text-transform: uppercase;
-                color: $color-blanco;
+                color: map-get($colores, blanco);
                 cursor: pointer
             }
         }

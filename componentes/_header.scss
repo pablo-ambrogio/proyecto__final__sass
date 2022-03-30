@@ -1,6 +1,5 @@
 .contenedor__nav {
-    width: 100%;
-    height: auto;
+    @include width-height (100%, auto);
     background-color: white;
     box-shadow: 0 0 10px rgba(128, 128, 128, 0.397);
     
@@ -15,9 +14,7 @@
 
 .navbar {
     width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include d__flex(row, space-around, center);
     margin: auto;
 
     .img__logo {
@@ -25,7 +22,7 @@
     }
 
     ul {
-        width: 50%;
+        width: auto;
         list-style: none;
         display: flex;
         justify-content: center;
@@ -39,10 +36,10 @@
             }
 
             a {
-                display: block;
-                padding: .8rem 1.2rem;
+                display: inline-block;
+                padding: .8rem 1rem;
                 text-decoration: none;
-                text-transform: uppercase; 
+                text-transform: uppercase;
             }
 
             ul {

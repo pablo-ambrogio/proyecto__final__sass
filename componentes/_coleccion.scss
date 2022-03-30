@@ -1,15 +1,10 @@
 .contenedor__colecciones__full {
-    width: 100%;
-    height: 60rem;
-    // background-color: mediumorchid;
-    background-image: url(../img/colecciones-fav/slider_home_ph2.png);
-    background-repeat: no-repeat;
-    object-position: center bottom;
+    @include width-height (100%, 60rem);
+    background: url(../img/colecciones-fav/slider_home_ph2.png) no-repeat center bottom;
     background-size: cover;
 
     .contenedor__colecciones {
-        width: 80%;
-        height: 100%;
+        @include width-height (80%, 100%);
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -18,13 +13,11 @@
         'titulo titulo'
         'coleccion-uno coleccion-dos'
         'boton boton';
-        // background-color: mediumspringgreen;
     }
 }
 
 .colecciones__textos {
     grid-area: titulo;
-    // background-color: mediumvioletred;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -47,29 +40,20 @@
 }
 
 .contenedor__coleccion {
-    width: 100%;
-    height: 100%;
+    @include width-height (100%, 100%);
     grid-area: coleccion-uno;
-    // background-color: mediumslateblue;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    @include d__flex(column, flex-end, flex-end);
 
     position: relative;
 }
 .absolute__uno {
-    position: absolute;
-    top: 60%;
-    left: 8%;
+    @include p-absolute (60%, 8%);
     transform: translate(-2%, -40%);
 }
 
 .contenedor__coleccion__dos {
-    width: 100%;
-    height: 100%;
+    @include width-height (100%, 100%);
     grid-area: coleccion-dos;
-    // background-color: mediumseagreen;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -78,34 +62,24 @@
 }
 
 .absolute__dos {
-    position: absolute;
-    top: 40%;
-    left: 8%;
+    @include p-absolute (40%, 8%);
     transform: translate(-2%, -60%);
 }
 
 // contenedor imagen
 .coleccion__imagen {
-    width: 65%;
-    height: 75%;
-    // width: 350px;
-    // height: 550px;
-    // background-color: rgb(135, 211, 85);
+    @include width-height (65%, 75%);
     margin-right: 3rem;
     
     img {
-        width: 100%;
-        height: 100%;
+        @include width-height (100%, 100%);
     }
 }
 
 // contenedor descripcion
 .coleccion__descripcion {
-    width:  150px;
-    height: auto;
-    // background-color: mediumblue;
+    @include width-height (150px, auto);
 
-    
     .descripcion__coleccion {
         font-size: 2rem;
         color: $color-blanco;
@@ -132,11 +106,8 @@
 // boton 
 .colecciones__button {
     grid-area: boton;
-    width: 100%;
-    // background-color: mistyrose;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include width-height (100%, auto);
+    @extend %d-flex__row;
     margin-top: 1rem;
 
     a {
