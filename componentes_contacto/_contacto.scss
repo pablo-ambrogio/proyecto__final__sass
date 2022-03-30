@@ -1,0 +1,157 @@
+
+// funcion para aplicar estilos universales en la página
+:where(header, main, footer) {
+
+    a {
+        text-decoration: none;
+    }
+
+    input, textarea {
+        padding: 1rem;
+        font-family: 'Poppins', sans-serif;
+        outline: none;
+        border: 1px solid rgba(49, 49, 49, 0.3);
+    }
+}
+
+
+.contenedor-contacto {
+    margin-top: 87px;
+    @include width-height(100%, auto);
+}
+
+.imagen {
+    @include width-height (100%, 35rem);
+    background: url(../img/contacto/tyler-nix-fo83GD_AARE-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    color: $color-blanco;
+    @extend %d-flex__column;
+    gap: 1rem;
+
+    &__texto {
+        font-size: 3rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-shadow: 0 0 7px rgba(0, 0, 0, .5);
+    }
+
+    &__numero {
+        font-size: 1.2rem;
+        text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    }
+
+}
+
+.contenedor-formulario {
+    @include width-height(60%, 50rem);
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.formulario {
+    @include width-height(60%, auto);
+    margin: 0 auto;
+    padding: 4rem;
+    box-shadow: 0 0 10px rgba(49, 49, 49, 0.3);
+
+    &__titulo {
+        text-align: center;
+        color: map-get($colores, amarillo);
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+    }
+
+    &__aclaracion {
+
+        &-asterisco {
+            color: red;
+        }
+    }
+
+    &__campos {
+        @include d__grid-repeart (2, 1fr, auto);
+        grid-template-areas: 
+        'nombre apellido'
+        'correo correo'
+        'asunto asunto'
+        'mensaje mensaje'; 
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    &__campo {
+        @include width-height(100%, auto);
+
+        &-nombre {
+            grid-area: nombre;
+        }
+
+        &-apellido {
+            grid-area: apellido;
+        }
+
+        &-correo {
+            grid-area: correo;
+        }
+
+        &-asunto {
+            grid-area: asunto;
+        }
+
+        &-mensaje {
+            grid-area: mensaje;
+        }
+
+        // inputs
+
+        &-input {
+            @include width-height(100%, 3rem);
+        }
+
+        &-mensaje {
+            @include width-height(100%, 12rem);
+            resize: none; //impide redimensionar la caja
+        }
+    }
+
+    // boton 
+    &__boton {
+        @include width-height(100%, 4rem);
+        @include d__flex(row,start, center);
+        margin-top: 1rem;
+        // background-color: mediumseagreen;
+    }
+
+}
+
+.boton {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1rem;
+    @include width-height(auto, auto);
+    background-color: black;
+    color: $color-blanco;
+
+    // &__icono {
+    //     display: none;
+    // }
+
+    &:hover .fa-arrow-right:before {
+        display: block;
+    }
+}
+
+.fa-arrow-right:before {
+    content: "\f061";
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: $color-blanco;
+}
+
+
+
+

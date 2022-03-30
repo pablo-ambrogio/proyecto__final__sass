@@ -3,12 +3,12 @@
 }
 
 .footer {
-    @include width-height (80%, inherit);
+    @include width-height (70%, inherit);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    margin: 0 auto;
-    align-items: center;
+    margin: 2rem auto 0 auto;
+    align-items: baseline;
 }
 
 .footer__imagen {

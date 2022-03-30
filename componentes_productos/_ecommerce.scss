@@ -1,0 +1,171 @@
+.main__productos {
+    margin-top: 100px; 
+}
+
+.ecommerce {
+    @include width-height (80%, auto);
+    @include d__grid (25%, 75%, auto);
+    grid-template-areas: 
+    'categorias productos';
+    // background-color: mediumaquamarine;
+    margin: 0 auto;
+}
+
+.categorias {
+    grid-area: categorias;
+    // background-color: moccasin;
+    @include width-height(100%, auto);
+    // margin: 0 auto;
+
+    &__productos {
+        @include d__flex(column, center, flex-start);
+    }
+}
+
+.categoria__buscar-input {
+    width: 100%;
+    height: 2.5rem;
+    padding-left: 2.5rem;
+    background: url(../img/iconos/icons8-búsqueda.svg) no-repeat 1rem;
+    background-size: 1.1rem;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0, .3);
+    color: $color-negro;
+    font-size: .9rem;
+    margin: 1rem 0;
+}
+
+.categoria__titulo {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: $color-amarillo;
+    font-weight: 500;
+}
+
+.categoria__nombre-producto {
+    text-decoration: none;
+    color: $color-verde;
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+.productos {
+    grid-area: productos;
+    // background-color: mediumvioletred;
+    
+    &__migas {
+        @include width-height (90%, 4rem);
+        @include d__flex(row, space-between, center);
+        margin: 0 auto;
+        // background-color: mediumpurple;
+    }
+
+    &__detalles {
+    @include d__grid-repeart(3, 1fr, auto);
+    @include width-height (100%, auto);
+    margin: 0 auto;
+    padding: 1rem;
+    // gap: 1rem;
+    row-gap: 1rem;
+    // background-color: rgb(211, 152, 52);
+    }
+}
+
+.producto {
+    @extend %d-flex__column;
+
+    &__contenedor-img {
+        @include width-height (220px, 220px);
+    }
+
+    &__img {
+        @include width-height (inherit, inherit);
+    }
+
+    &__nombre {
+        text-decoration: none;
+        color: $color-negro;
+        text-transform: uppercase;
+
+        &-categoria {
+            text-decoration: none;
+            color: $color-amarillo;
+        }
+    }
+
+    
+
+    &__resultado {
+        color: map-get($colores, negro);
+    }
+
+    &__selector {
+        padding: .7rem 1rem;
+        padding-right: 0;
+        outline: none;
+        font-size: 1rem;
+        color: map-get($colores , negro);
+        border: 1px solid rgba(0, 0, 0, .3);
+    }
+    
+}
+
+.paginacion {
+    @include width-height (80%, 5rem);
+    // background-color: mediumslateblue;
+    margin: 0 auto;
+    @extend %d-flex__row;
+    gap: 1rem
+}
+
+.pagina {
+    @include width-height (2.5rem, 2.5rem);
+    // background-color: mediumturquoise;
+    @extend %d-flex__row;
+
+    &__acceso {
+        @extend %d-flex__row;
+        // display: inline-flex;
+        // justify-content: center;
+        // align-items: center;
+        @include width-height(100%, 100%);
+        text-decoration: none;
+        color: $color-negro;
+        border: 1px solid map-get($colores, negro);
+
+        &:hover {
+            background-color: $color-verde;
+            border: 1px solid map-get($colores, verde);
+            color: $color-blanco;
+        }
+
+        &--active{
+            border: 1px solid map-get($colores, verde);
+            background-color: $color-verde;
+            color: $color-blanco;
+        } 
+
+        // &-icono {
+        //     display: flex;
+        //     justify-content: center;
+        //     color: $color-negro;
+        // }
+    }
+
+    &--active {
+        background-color: $color-verde;
+        color: $color-verde;
+    }
+    
+}
+
+// icono flecha siguiente
+.fa-arrow-right:before {
+    content: "\f061";
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

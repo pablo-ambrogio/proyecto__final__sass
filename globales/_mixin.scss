@@ -7,6 +7,18 @@
     align-items: $aling-items;
 }
 
+@mixin d__grid ($column, $column2, $row) {
+    display: grid;
+    grid-template-columns: $column $column2;
+    grid-template-rows: $row;
+}
+
+@mixin d__grid-repeart ($repeart, $column, $row) {
+    display: grid;
+    grid-template-columns: repeat($repeart, $column);
+    grid-template-rows: $row;
+}
+
 // width - height 
 @mixin width-height ($width, $height) {
     width: $width;
