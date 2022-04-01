@@ -11,7 +11,24 @@
     }
 
     .contenedor-formulario {
-        @include width-height(80%, auto);
+        @include width-height(90%, auto);
         padding: 2rem 0;
     }
+
+    .formulario {
+
+        padding: 1rem;
+
+        &__campos {
+            @include d__grid-repeart (1, 1fr, auto);
+            grid-template-areas: 
+            'nombre'
+            'apellido'
+            'correo'
+            'asunto'
+            'mensaje'; 
+        }
+    }
+
+    
 }

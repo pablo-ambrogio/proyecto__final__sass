@@ -27,9 +27,21 @@
         }
 
         &__detalles {
+            // @include width-height(90%, auto);
             @include d__grid-repeart (2, 1fr, auto);
             padding: 1.2rem 0;
+            background-color: mediumaquamarine;
         }
+    }
+
+    .producto {
+        background-color: magenta;
+
+        &__contenedor-img {
+            @include width-height (158px, 158px);
+            
+        }
+
     }
 
 }

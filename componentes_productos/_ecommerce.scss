@@ -75,11 +75,11 @@
     @extend %d-flex__column;
 
     &__contenedor-img {
-        @include width-height (220px, 220px);
+        @include width-height (300px, 300px);
     }
 
     &__img {
-        @include width-height (inherit, inherit);
+        @include width-height (100%, auto);
     }
 
     &__nombre {
