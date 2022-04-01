@@ -8,7 +8,8 @@
 @import "../globales/extends";
 @import "../globales/maps";
 
-// Componentes
+// Componentes 
+// header
 @import "../componentes/header";
 @import "../componentes/slider";
 @import "../componentes/seccion_elementos";
@@ -18,12 +19,15 @@
 @import "../componentes/vinculos";
 @import "../componentes/suscripcion"; 
 @import "../componentes/footer";
-
-// Componentes-productos
+// productos
 @import "../componentes_productos/ecommerce";
+// contacto
 @import "../componentes_contacto/contacto";
+// preguntas frecuentes
+@import "../componentes_preguntas-frecuentes/preguntas";
 
 // Media Queries
+// header
 @import "../media_queries/media_slider";
 @import "../media_queries/media_header";
 @import "../media_queries/media_elementos";
@@ -33,6 +37,15 @@
 @import "../media_queries/media_vinculos";
 @import "../media_queries/media_suscripcion";
 @import "../media_queries/media_footer";
+
+// productos
+@import "../media__queries-productos/media__productos";
+
+// preguntas 
+@import "../media__queries-preguntas/media__preguntas";
+
+// contacto
+@import "../media__queries-contacto/media__contacto";
 
 
 

@@ -1,0 +1,35 @@
+@media screen and (max-width: 576px) {
+    .main__productos {
+        margin-top: 50px;
+    }
+
+    .ecommerce {
+        @include width-height (100%, auto);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'categorias' 
+        'productos';
+    }
+
+    .categorias {
+        @include width-height(90%, auto);
+        margin: 0 auto;
+    }
+
+
+    .productos {
+
+        &__migas {
+            @include width-height(90%, auto);
+            @include d__flex(column,center,flex-start);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        &__detalles {
+            @include d__grid-repeart (2, 1fr, auto);
+            padding: 1.2rem 0;
+        }
+    }
+
+}

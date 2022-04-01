@@ -1,0 +1,26 @@
+@media screen and (max-width: 576px) {
+    .main__preguntas {
+        margin-top: 50px;
+    }
+
+    .preguntas {
+
+        &__texto {
+            font-size: 2rem;
+        }
+    }
+
+    .contenedor__card {
+        @include width-height(100%, auto);
+    }
+
+    .card input {
+
+        &:checked ~ .card__textos {
+            // border-top: 1px solid rgb(123, 98, 129);
+            @include width-height(100%, 13.5rem);
+            
+        }
+    
+    }
+}

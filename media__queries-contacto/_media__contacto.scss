@@ -1,0 +1,17 @@
+@media screen and (max-width: 576px) {
+    .contenedor-contacto {
+        margin-top: 50px;
+    }
+
+    .imagen {
+
+        &__texto {
+            font-size: 2rem;
+        }
+    }
+
+    .contenedor-formulario {
+        @include width-height(80%, auto);
+        padding: 2rem 0;
+    }
+}
