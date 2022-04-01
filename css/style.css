@@ -807,14 +807,6 @@ body {
   color: #3b8284;
 }
 
-.fa-arrow-right:before {
-  content: "\f061";
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 :where(header, main, footer) a {
   text-decoration: none;
 }
