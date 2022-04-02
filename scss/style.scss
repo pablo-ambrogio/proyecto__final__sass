@@ -25,6 +25,8 @@
 @import "../componentes_contacto/contacto";
 // preguntas frecuentes
 @import "../componentes_preguntas-frecuentes/preguntas";
+// preguntas nosotros
+@import "../componentes_nosotros/nosotros";
 
 // Media Queries
 // header
@@ -46,6 +48,9 @@
 
 // contacto
 @import "../media__queries-contacto/media__contacto";
+
+// nosotros
+@import "../media__queries-nosotros/media__nosotros";
 
 
 

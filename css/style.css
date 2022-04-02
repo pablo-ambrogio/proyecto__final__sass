@@ -10,7 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.preguntas, .pagina__acceso, .pagina, .paginacion, .contenedor__vinculos, .colecciones__button, .contenedor__elementos .elemento .elemento__hover {
+.quienes-somos, .preguntas, .pagina__acceso, .pagina, .paginacion, .contenedor__vinculos, .colecciones__button, .contenedor__elementos .elemento .elemento__hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1013,6 +1013,34 @@ body {
   height: 12rem;
 }
 
+.main__quienes-somos {
+  width: 100%;
+  height: auto;
+  margin-top: 87px;
+}
+
+.quienes-somos {
+  width: 100%;
+  height: 20rem;
+  background: url(../img/quienes-somos/tara-yates-ZL7JpQ3d1Yk-unsplash\ \(1\).jpg) center/cover no-repeat;
+}
+.quienes-somos__titulo {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.quienes__textos {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 576px) {
   .container__full__slider {
     height: 400px;
@@ -1309,6 +1337,16 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "nombre" "apellido" "correo" "asunto" "mensaje";
+  }
+}
+@media screen and (max-width: 576px) {
+  .quienes-somos__titulo {
+    font-size: 2rem;
+  }
+
+  .quienes__textos {
+    width: 80%;
+    height: auto;
   }
 }
 

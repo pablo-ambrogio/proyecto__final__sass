@@ -1,0 +1,10 @@
+@media screen and (max-width: 576px) {
+    .quienes-somos {
+        &__titulo {
+            font-size: 2rem;
+        }
+    }
+    .quienes__textos {
+        @include width-height(80%, auto);
+    }
+}

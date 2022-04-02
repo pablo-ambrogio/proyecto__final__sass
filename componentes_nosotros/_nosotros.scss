@@ -1,0 +1,28 @@
+.main__quienes-somos {
+    @include width-height(100%, auto);
+    margin-top: 87px;
+    // background-color: mediumseagreen
+}
+
+.quienes-somos {
+    @include width-height(100%, 20rem);
+    background: url(../img/quienes-somos/tara-yates-ZL7JpQ3d1Yk-unsplash\ \(1\).jpg) center / cover no-repeat;
+    @extend %d-flex__row;
+
+    &__titulo {
+        font-size: 3rem;
+        color: $color-blanco;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    }
+}
+
+.quienes__textos {
+    @include width-height(60%, auto);
+    margin: 0 auto;
+    padding-top: 2rem;
+    // background-color: mediumorchid;
+    line-height: 2rem;
+    font-weight: 500;
+}
