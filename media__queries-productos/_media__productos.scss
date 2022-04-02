@@ -19,27 +19,36 @@
 
     .productos {
 
+        @include width-height(90%, auto);
+        margin: 0 auto;
+
         &__migas {
-            @include width-height(90%, auto);
+            @include width-height(100%, auto);
             @include d__flex(column,center,flex-start);
             gap: 1rem;
             margin-top: 1rem;
         }
 
         &__detalles {
-            // @include width-height(90%, auto);
-            @include d__grid-repeart (2, 1fr, auto);
+            @include d__grid-repeart (2, 50%, auto);
             padding: 1.2rem 0;
-            background-color: mediumaquamarine;
+            // column-gap: .5rem;
+            // background-color: mediumaquamarine;
         }
     }
 
     .producto {
-        background-color: magenta;
+        // background-color: magenta;
 
         &__contenedor-img {
-            @include width-height (158px, 158px);
+            @include width-height (95%, 95%);
+            margin: 0 auto;
+            // background: red;
             
+        }
+
+        &__img {
+            @include width-height(100%, 100%);
         }
 
     }
