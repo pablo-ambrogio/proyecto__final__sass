@@ -1,4 +1,4 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     .contenedor__banner {
         height: auto;
 
@@ -10,4 +10,16 @@
             display: block;
         }
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .contenedor__banner {
+        @include width-height (100%, auto);
+        padding: 0;
+    }
+
+    .banner {
+        @include width-height (100%, auto);
+    }
+
 }

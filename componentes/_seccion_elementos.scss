@@ -1,7 +1,6 @@
 .contenedor__elementos__full {
     @include width-height (100%, 28rem);
-    background: url(../img/section-img/Capa-24.png) no-repeat left center;
-    background-size: auto;
+    background: url(../img/section-img/Capa-24.png) left / contain no-repeat;
 }
 
 .contenedor__elementos {
@@ -14,12 +13,12 @@
         @extend %d-flex__column;
         position: relative;
 
-        .elemento__img {
+        &__img {
             @include width-height (90px, auto);
             mix-blend-mode: multiply; // Quita fondo de imagen ("la convierte en PNG")
         }
 
-        .elemento__linea {
+        &__linea {
             // color: rgb(73, 73, 66);
             font-size: 20px;
             margin: .7rem 0;

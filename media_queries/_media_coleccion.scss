@@ -1,4 +1,4 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     .contenedor__colecciones__full {
         height: auto;
         // margin-bottom: 0;
@@ -48,4 +48,41 @@
     }
 
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+
+    .contenedor__colecciones__full {
+        .contenedor__colecciones {
+            column-gap: 1rem;
+        }
+    }
+
+
+    .contenedor__coleccion {
+        align-items: stretch;
+    
+    }
+
+    .contenedor__coleccion__dos {
+        align-items: stretch;
+    }
+
+    .coleccion__imagen {
+        @include width-height (100%, 80%);
+        margin-right: 3rem;
+        
+        
+        img {
+            @include width-height (100%, 100%);
+        }
+    }
+
+
+    .absolute__dos {
+        @include p-absolute (50%, 8%);
+        transform: translate(-2%, -75%);
+    }
+    
 }

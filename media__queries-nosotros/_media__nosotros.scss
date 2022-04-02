@@ -1,4 +1,9 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
+
+    .main__quienes-somos {
+        margin-top: 50px;
+    }
+
     .quienes-somos {
         &__titulo {
             font-size: 2rem;

@@ -22,9 +22,13 @@
     }
 }
 
+.categorias__busqueda {
+    @include width-height(80%, auto);
+}
 .categoria__buscar-input {
-    width: 100%;
-    height: 2.5rem;
+    @include width-height(100%, 2.5rem);
+    // width: 100%;
+    // height: 2.5rem;
     padding-left: 2.5rem;
     background: url(../img/iconos/icons8-búsqueda.svg) no-repeat 1rem;
     background-size: 1.1rem;

@@ -1,4 +1,4 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     .main__preguntas {
         margin-top: 50px;
     }
@@ -19,6 +19,26 @@
         &:checked ~ .card__textos {
             // border-top: 1px solid rgb(123, 98, 129);
             @include width-height(100%, 262px);
+            
+        }
+    
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .main__preguntas {
+        margin-top: 50px;
+    }
+
+    .contenedor__card {
+        @include width-height(90%, auto);
+    }
+    .card input {
+
+        &:checked ~ .card__textos {
+            // border-top: 1px solid rgb(123, 98, 129);
+            @include width-height(100%, 13rem);
             
         }
     

@@ -1,5 +1,6 @@
 .contenedor__footer {
-    @include width-height (100%, 20rem);
+    @include width-height (100%, auto);
+    padding-bottom: 2rem;
 }
 
 .footer {
@@ -40,4 +41,9 @@
             text-decoration: none;
         }
     }
+}
+
+.copyright {
+    color: $color-negro;
+    text-align: center;
 }

@@ -1,14 +1,15 @@
-// Fuente Poppins
+// ----- Fuente poppins -----
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-// Globales
+// ----- Globales -----
 @import "../globales/reset.scss";
 @import "../globales/variables";
 @import "../globales/mixin";
 @import "../globales/extends";
 @import "../globales/maps";
 
-// Componentes 
+// ----- Componentes -----
+
 // header
 @import "../componentes/header";
 @import "../componentes/slider";
@@ -19,16 +20,22 @@
 @import "../componentes/vinculos";
 @import "../componentes/suscripcion"; 
 @import "../componentes/footer";
+
 // productos
 @import "../componentes_productos/ecommerce";
+
 // contacto
 @import "../componentes_contacto/contacto";
+
 // preguntas frecuentes
 @import "../componentes_preguntas-frecuentes/preguntas";
+
 // preguntas nosotros
 @import "../componentes_nosotros/nosotros";
 
-// Media Queries
+
+// ----- Media Queries -----
+
 // header
 @import "../media_queries/media_slider";
 @import "../media_queries/media_header";

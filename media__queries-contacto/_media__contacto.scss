@@ -1,4 +1,4 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     .contenedor-contacto {
         margin-top: 50px;
     }
@@ -16,7 +16,7 @@
     }
 
     .formulario {
-
+        @include width-height(100%, auto);
         padding: 1rem;
 
         &__campos {
@@ -30,5 +30,21 @@
         }
     }
 
-    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .contenedor-contacto {
+        margin-top: 50px;
+    }
+    .contenedor-formulario {
+        @include width-height(70%, auto);
+        padding: 2rem 0;
+    }
+
+    .formulario {
+        @include width-height(100%, auto);
+        padding: 1rem;
+    }
+
 }
