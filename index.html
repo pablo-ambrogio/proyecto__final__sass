@@ -29,7 +29,7 @@
             <a href="./index.html"><img class="img__logo" src="./img/logo.png" alt="logo"/></a>
 
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html" class="activo__menu">Inicio</a></li>
                 <li>
                     <a href="./pages/productos.html">Productos</a>
                     <ul>
@@ -117,7 +117,7 @@
             <div class="contenedor__elementos">
                 <div class="elemento borde__amarillo">
                     <img class="elemento__img" src="./img/section-img/logo1.jpg" alt=""/>
-                    <div class="elemento__linea elemento__linea--amarillo">──────</div>
+                    <div class="elemento__linea elemento__linea--amarillo">──────</div> <!-- linea horizontal comando alt + 196-->
                     <h4 class="elemento__titulo">Más vendido</h4>
                     <div class="elemento__hover bg__amarillo">
                         <a class="elemento__btn" href="">Más vendido</a>
@@ -129,7 +129,7 @@
                     src="./img/section-img/logo2.jpg"
                     alt=""
                     />
-                    <div class="elemento__linea elemento__linea--verde">──────</div>
+                    <div class="elemento__linea elemento__linea--verde">──────</div> <!-- linea horizontal comando alt + 196-->
                     <h4 class="elemento__titulo">Nuevo</h4>
                     <div class="elemento__hover bg__verde">
                     <a class="elemento__btn" href="">Nuevo</a>
@@ -141,7 +141,7 @@
                     src="./img/section-img/logo3.jpg"
                     alt=""
                     />
-                    <div class="elemento__linea elemento__linea--gris">──────</div>
+                    <div class="elemento__linea elemento__linea--gris">──────</div> <!-- linea horizontal comando alt + 196-->
                     <h4 class="elemento__titulo">Coleccion</h4>
                     <div class="elemento__hover bg__gris">
                     <a class="elemento__btn" href="">Coleccion</a>
@@ -172,23 +172,57 @@
                             <img src="./img/destacada/Arrow-1.png" alt="" />
                         </div>
                         <h2 class="titulo">Joyería destacada</h2>
-                        <div class="linea__separadora">________</div>
+                        <div class="linea__separadora">───────</div> <!-- linea horizontal comando alt + 196-->
                     </div>
                     <div class="contenedor__productos">
+                        <!-- trabajando parte de hover en la caja -->
                         <div class="contenedor__producto">
                             <div class="producto__imagen">
                                 <img class="imagen" src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg" alt=""/>
+                                <div class="imagen__hover">
+                                    <div class="heart">
+                                        <a href="" class="heart__link">
+                                            <i class="fa-solid fa-heart heart__icon"></i>
+                                        </a>
+                                    </div>
+                                    <div class="añadir-carrito">
+                                        <a href="" class="añadir-carrito__link">Añadir al carrito</a>
+                                    </div>
+                                    <div class="search">
+                                        <a href="" class="search__link"> 
+                                            <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                                            <!-- <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg> -->
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <a class="producto__categoria" href="">Collares</a>
                             <p class="producto__nombre">Collar de mamá e hija</p>
                             <span class="producto__precio">$32.00 - $42.00</span>
                         </div>
+                        <!--  -->
                     <div class="contenedor__producto">
                         <div class="producto__imagen">
                         <img
                             src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg"
                             alt=""
                         />
+                        <div class="imagen__hover">
+                            <div class="heart">
+                                <a href="" class="heart__link">
+                                    <i class="fa-solid fa-heart heart__icon"></i>
+                                </a>
+                            </div>
+                            <div class="añadir-carrito">
+                                <a href="" class="añadir-carrito__link">Añadir al carrito</a>
+                            </div>
+                            <div class="search">
+                                <a href="" class="search__link"> 
+                                    <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                                    <!-- <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg> -->
+                                </a>
+                            </div>
+                        </div>
                         </div>
                         <a class="producto__categoria" href="">Collares</a>
                         <p class="producto__nombre">Collar de mamá e hija</p>
@@ -201,6 +235,22 @@
                             src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg"
                             alt=""
                         />
+                        <div class="imagen__hover">
+                            <div class="heart">
+                                <a href="" class="heart__link">
+                                    <i class="fa-solid fa-heart heart__icon"></i>
+                                </a>
+                            </div>
+                            <div class="añadir-carrito">
+                                <a href="" class="añadir-carrito__link">Añadir al carrito</a>
+                            </div>
+                            <div class="search">
+                                <a href="" class="search__link"> 
+                                    <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                                    <!-- <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg> -->
+                                </a>
+                            </div>
+                        </div>
                         </div>
                         <a class="producto__categoria" href="">Collares</a>
                         <p class="producto__nombre">Collar de mamá e hija</p>
@@ -227,12 +277,28 @@
                             <img src="./img/destacada/Arrow-1.png" alt="" />
                         </div>
                         <h2 class="titulo">Joyería destacada</h2>
-                        <div class="linea__separadora">________</div>
+                        <div class="linea__separadora">───────</div> <!-- linea horizontal comando alt + 196-->
                     </div>
                     <div class="contenedor__productos">
                         <div class="contenedor__producto">
                             <div class="producto__imagen">
                                 <img class="imagen" src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg" alt=""/>
+                                <div class="imagen__hover">
+                                    <div class="heart">
+                                        <a href="" class="heart__link">
+                                            <i class="fa-solid fa-heart heart__icon"></i>
+                                        </a>
+                                    </div>
+                                    <div class="añadir-carrito">
+                                        <a href="" class="añadir-carrito__link">Añadir al carrito</a>
+                                    </div>
+                                    <div class="search">
+                                        <a href="" class="search__link"> 
+                                            <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                                            <!-- <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg> -->
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <a class="producto__categoria" href="">Collares</a>
                             <p class="producto__nombre">Collar de mamá e hija</p>
@@ -241,6 +307,22 @@
                         <div class="contenedor__producto">
                             <div class="producto__imagen">
                                 <img src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg" alt=""/>
+                                <div class="imagen__hover">
+                                    <div class="heart">
+                                        <a href="" class="heart__link">
+                                            <i class="fa-solid fa-heart heart__icon"></i>
+                                        </a>
+                                    </div>
+                                    <div class="añadir-carrito">
+                                        <a href="" class="añadir-carrito__link">Añadir al carrito</a>
+                                    </div>
+                                    <div class="search">
+                                        <a href="" class="search__link"> 
+                                            <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                                            <!-- <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg> -->
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <a class="producto__categoria" href="">Collares</a>
                             <p class="producto__nombre">Collar de mamá e hija</p>
@@ -249,6 +331,22 @@
                         <div class="contenedor__producto">
                             <div class="producto__imagen">
                                 <img class="imagen" src="./img/destacada/Collar-de-Mama-e-hija-300x300.jpg" alt=""/>
+                                <div class="imagen__hover">
+                                    <div class="heart">
+                                        <a href="" class="heart__link">
+                                            <i class="fa-solid fa-heart heart__icon"></i>
+                                        </a>
+                                    </div>
+                                    <div class="añadir-carrito">
+                                        <a href="" class="añadir-carrito__link">Añadir al carrito</a>
+                                    </div>
+                                    <div class="search">
+                                        <a href="" class="search__link"> 
+                                            <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                                            <!-- <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg> -->
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <a class="producto__categoria" href="">Collares</a>
                             <p class="producto__nombre">Collar de mamá e hija</p>
@@ -364,5 +462,8 @@
         </div>
         <p class="copyright">Copyright &copy; 2022 Athenea Joyas. Hecho por Pablo Ambrogio</p>
     </footer>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/af95499704.js" crossorigin="anonymous"></script>
 </body>
 </html>

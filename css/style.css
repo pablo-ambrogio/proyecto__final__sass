@@ -24,6 +24,10 @@ body {
   align-items: center;
 }
 
+:where(.navbar) a {
+  color: #3b8284;
+}
+
 .contenedor__nav {
   width: 100%;
   height: auto;
@@ -82,6 +86,10 @@ body {
 .navbar ul li ul li a {
   display: block;
   padding: 0.8rem 1.2rem;
+}
+
+.activo__menu {
+  color: #eabb6b;
 }
 
 /* sass --watch scss/style.scss css/style.css */
@@ -338,6 +346,7 @@ body {
 .contenedor__productos .contenedor__producto .producto__imagen {
   width: inherit;
   height: 200px;
+  position: relative;
 }
 .contenedor__productos .contenedor__producto .producto__imagen img {
   width: inherit;
@@ -356,6 +365,67 @@ body {
 .contenedor__productos .producto__precio {
   font-size: 1rem;
   color: #444444;
+}
+
+.imagen__hover {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.imagen__hover:hover .heart, .imagen__hover:hover .añadir-carrito, .imagen__hover:hover .search {
+  bottom: 0;
+}
+.imagen__hover .heart {
+  background-color: #eabb6b;
+  padding: 0.5rem;
+  height: 2.5rem;
+  position: absolute;
+  bottom: -21%;
+  left: 0;
+  transition: all 0.8s ease;
+}
+.imagen__hover .heart__icon {
+  width: 25px;
+  color: #fff;
+  background-color: transparent;
+}
+.imagen__hover .añadir-carrito {
+  background-color: #eabb6b;
+  height: 2.5rem;
+  width: calc(100% - 5rem);
+  margin: 0;
+  position: absolute;
+  bottom: -21%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1.2s ease;
+}
+.imagen__hover .añadir-carrito__link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+}
+.imagen__hover .search {
+  background-color: #eabb6b;
+  height: 2.5rem;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: -21%;
+  right: 0;
+  transition: all 1.5s ease;
+}
+.imagen__hover .search__icon {
+  width: 25px;
+  color: #fff;
 }
 
 .contenedor__aside {
