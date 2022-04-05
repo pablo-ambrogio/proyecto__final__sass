@@ -637,7 +637,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto;
   align-items: baseline;
 }
 
@@ -860,7 +860,7 @@ body {
 }
 
 .formulario {
-  width: 60%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   padding: 4rem;
@@ -924,24 +924,30 @@ body {
 
 .boton {
   display: inline-block;
+  width: auto;
   padding: 1rem;
   font-size: 1rem;
   width: auto;
   height: auto;
   background-color: black;
   color: #fff;
+  position: relative;
 }
-.boton:hover .fa-arrow-right:before {
-  display: block;
+.boton:hover .boton__icono {
+  left: 100%;
 }
 
-.fa-arrow-right:before {
-  content: "\f061";
+.boton__icono {
+  display: flex;
+  width: 25%;
   height: 100%;
-  display: none;
-  justify-content: center;
   align-items: center;
-  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 75%;
+  background-color: black;
+  transition: all 0.5s ease;
+  z-index: -1;
 }
 
 .main__preguntas {

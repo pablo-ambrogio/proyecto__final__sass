@@ -50,7 +50,7 @@
 }
 
 .formulario {
-    @include width-height(60%, auto);
+    @include width-height(100%, auto);
     margin: 0 auto;
     padding: 4rem;
     box-shadow: 0 0 10px rgba(49, 49, 49, 0.3);
@@ -128,29 +128,64 @@
 
 .boton {
     display: inline-block;
+    width: auto;
     padding: 1rem;
     font-size: 1rem;
     @include width-height(auto, auto);
     background-color: black;
     color: $color-blanco;
+    position: relative;
+    
 
     // &__icono {
     //     display: none;
     // }
 
-    &:hover .fa-arrow-right:before {
-        display: block;
+    &:hover .boton__icono {
+        left: 100%;
+        
+        // display: block;
     }
 }
 
-.fa-arrow-right:before {
-    content: "\f061";
+.boton__icono {
+    display: flex;
+    width: 25%;
     height: 100%;
-    display: none;
-    justify-content: center;
     align-items: center;
-    color: $color-blanco;
+    position: absolute;
+    top: 0;
+    left: 75%;
+    background-color: black;
+    transition: all .5s ease;
+    z-index: -1;
 }
+
+// .boton__icono-ico {
+    
+//     width: 100%;
+// }
+
+// .fa-arrow-right{
+//     width: 20%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     // transform: translate(-50%, -50%);
+//     align-items: center;
+//     background-color: red;
+// }
+
+// .fa-arrow-right:before {
+//     content: "\f061";
+//     height: 100%;
+//     // display: none;
+//     justify-content: center;
+//     align-items: center;
+//     color: $color-blanco;
+// }
 
 
 
