@@ -7,15 +7,13 @@
     @include d__grid (25%, 75%, auto);
     grid-template-areas: 
     'categorias productos';
-    // background-color: mediumaquamarine;
+    background-color: mediumaquamarine;
     margin: 0 auto;
 }
 
 .categorias {
     grid-area: categorias;
-    // background-color: moccasin;
     @include width-height(100%, auto);
-    // margin: 0 auto;
 
     &__productos {
         @include d__flex(column, center, flex-start);

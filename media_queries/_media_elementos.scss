@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .contenedor__elementos__full {
         height: 55rem;
     }
@@ -26,4 +26,16 @@
     }
     }
 
+}
+
+@media screen and (min-width:993px) and (max-width: 1280px) {
+
+    .contenedor__elementos__full {
+        @include width-height (100%, 20rem);
+    }
+
+    
+    .contenedor__elementos {
+        @include width-height (80%, inherit);
+    }
 }

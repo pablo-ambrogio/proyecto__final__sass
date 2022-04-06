@@ -5,6 +5,7 @@
 
 .contenedor__elementos {
     @include width-height (70%, inherit);
+    max-width: 1200px;
     margin: auto;
     @include d__flex(row, space-around, center);
     

@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .contenedor__banner {
         height: auto;
 
@@ -21,5 +21,15 @@
     .banner {
         @include width-height (100%, auto);
     }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1280px) {
+    
+    .contenedor__banner {
+        @include width-height (100%, auto);
+        padding: 0;
+    }
+
 
 }

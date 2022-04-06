@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .main__preguntas {
         margin-top: 50px;
     }
@@ -43,4 +43,13 @@
         }
     
     }
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1280px){
+
+    .contenedor__card {
+        @include width-height (70%, auto);
+    }
+    
 }

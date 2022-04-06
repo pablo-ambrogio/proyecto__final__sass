@@ -9,6 +9,7 @@
 
     .contenedor__destacada {
         width: 80%;
+        max-width: 1200px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 70% 30%;
@@ -19,6 +20,7 @@
     }
     .contenedor__destacada__2 {
         width: 80%;
+        max-width: 1200px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 30% 70%;
@@ -75,7 +77,6 @@
 .contenedor__productos {
     width: 85%;
     margin: 0 auto;
-    // background-color: mediumspringgreen;
     display: flex;
     justify-content: space-between;
 
@@ -85,16 +86,16 @@
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
-        // background-color: moccasin;
 
         .producto__imagen {
             @include width-height (inherit, 200px);
-            // font-size: 0;
             position: relative;
 
             img {
                 @include width-height (inherit, inherit);
             }
+
+
         }
     }
 
@@ -119,7 +120,7 @@
 
 }
 
-// hover en imagen
+// hover en producto
 .imagen__hover {
     position: absolute;
     width: inherit;
@@ -130,13 +131,9 @@
     justify-content: space-between;
     top: 0;
     left: 0;
+    
 
     overflow: hidden;
-
-    &:hover .heart, &:hover .añadir-carrito, &:hover .search {
-        // top: 0;
-        bottom: 0;
-    }
 
     .heart {
         background-color: $color-amarillo;
@@ -145,24 +142,31 @@
         position: absolute;
         bottom: -21%;
         left: 0;
-        
+        opacity: 0;
         transition: all .8s ease;
 
         &__icon {
             width: 25px;
             color: $color-blanco;
             background-color: transparent;
+
+            // &:hover {
+            //     color: rgb(189, 37, 37);
+            // }
         }
+
+        
     }
 
     .añadir-carrito {
         background-color: $color-amarillo;
         height: 2.5rem;
-        width: calc(100% - 5rem);
+        width: calc(100% - 80px);
         margin: 0;
         position: absolute;
         bottom: -21%;
         left: 50%;
+        opacity: 0;
         transform: translateX(-50%);
 
         display: flex;
@@ -186,7 +190,7 @@
         position: absolute;
         bottom: -21%;
         right: 0;
-        
+        opacity: 0;
 
         transition: all 1.5s ease;
 
@@ -194,6 +198,12 @@
             width: 25px;
             color: $color-blanco;
         }
+    }
+
+    &:hover .heart, &:hover .añadir-carrito, &:hover .search {
+        // top: 0;
+        bottom: 0;
+        opacity: 1;
     }
 }
 
@@ -205,9 +215,15 @@
     .aside__imagen {
         @include width-height (100%, 550px);
         position: relative;
+        overflow: hidden;
         img {
             @include width-height (inherit, inherit);
             object-fit: cover;
+            transition: all 1s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
 
         .aside__button {

@@ -35,15 +35,23 @@
         }
 
         .vinculo__boton {
-            @include width-height (min-content, auto);
-            margin: 0 auto;
+            display: inline-block;
+            @include width-height (max-content, auto);
             background-color: $color-amarillo;
             color: $color-blanco;
-            padding: .8rem 1.5rem;
             text-transform: uppercase;
-            border: 0;
-            letter-spacing: 1px;
-            cursor: pointer;
+            padding: .8rem 1.5rem;
+            justify-self: center;
+            letter-spacing: 1.2px;
+            // @include width-height (min-content, auto);
+            // margin: 0 auto;
+            // background-color: $color-amarillo;
+            // color: $color-blanco;
+            // padding: .8rem 1.5rem;
+            // text-transform: uppercase;
+            // border: 0;
+            // letter-spacing: 1px;
+            // cursor: pointer;
         }
 
     }

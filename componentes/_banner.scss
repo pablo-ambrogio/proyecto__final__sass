@@ -6,7 +6,7 @@
     // background-color: moccasin;
 
     .banner {
-        @include width-height (80%, auto);
+        @include width-height (90%, auto);
         margin: 0 auto;
         font-size: 0; // Quita font-size por defecto
         .banner__img {
