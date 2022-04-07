@@ -22,6 +22,7 @@
 // card
 .contenedor__card {
     @include width-height (50%, auto);
+    max-width: 900px;
     margin: 0 auto;
     padding: 3rem 0;
     // background-color: moccasin;

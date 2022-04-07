@@ -8,19 +8,35 @@
     grid-template-areas: 
     'categorias productos';
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .categorias {
     grid-area: categorias;
     @include width-height(100%, auto);
+    // background-color: moccasin;
+    padding-top: 1.2rem;
 
     &__productos {
         @include d__flex(column, center, flex-start);
     }
+
+    &__miga-pan {
+        @include width-height(100%, auto);
+    }
+}
+
+.anclas__miga-pan {
+    font-size: .9rem;
+    color: $color-verde;
+}
+
+.anclas__miga-pan--activo {
+    color: $color-amarillo;
 }
 
 .categorias__busqueda {
-    @include width-height(80%, auto);
+    @include width-height(100%, auto);
 }
 .categoria__buscar-input {
     @include width-height(100%, 2.5rem);

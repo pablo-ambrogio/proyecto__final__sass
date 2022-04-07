@@ -5,6 +5,7 @@
 
 .footer {
     @include width-height (70%, inherit);
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;

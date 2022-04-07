@@ -219,6 +219,7 @@
         img {
             @include width-height (inherit, inherit);
             object-fit: cover;
+            object-position: center top;
             transition: all 1s ease;
 
             &:hover {

@@ -15,13 +15,15 @@
 
 }
 
-#menu, .img__menu {
+#menu, #submenu, .img__menu, .img__sub-menu {
     display: none;
 }
 
 .navbar {
     width: 80%;
-    @include d__flex(row, space-around, center);
+    height: 87px;
+    @include d__flex(row, space-between, center);
+    max-width: 1200px;
     margin: auto;
 
     .img__logo {
@@ -57,7 +59,6 @@
                 flex-direction: column;
                 background-color: #fff;
                 box-shadow: 0 0 10px rgba(128, 128, 128, 0.397);
-                // visibility: hidden;
 
                 li {
                     margin: 0;
@@ -70,7 +71,6 @@
         }
     }
 }
-
 .activo__menu {
     color: $color-amarillo;
 }
