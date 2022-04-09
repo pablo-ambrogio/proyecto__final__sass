@@ -1,0 +1,93 @@
+@media screen and (max-width: 767px) {
+    .main__producto {
+        margin-top: 50px;
+    }
+
+    .contenedor__producto {
+        @include d__grid-repeart(1, 1fr, auto);
+        padding: 0;
+        padding: 1rem 0;
+        column-gap: 0;
+    }
+
+    .producto__col-1 {
+        @include width-height(90%, auto);
+        margin: 0 auto 1rem;
+    }
+
+    .productos__imagen {
+        @include width-height(100%, 400px);
+        min-height: 320px;
+        max-height: 500px;
+    }
+
+    .producto__imagen1, .producto__imagen2, .producto__imagen3 {
+        @include width-height(100%, 100%);
+        min-height: 320px;
+        max-height: 500px;
+    }
+
+    .labels__imagenes {
+        @include width-height(100%, auto);
+    }
+
+    // columna 2
+
+    .producto__col-2 {
+        @include width-height(90%, auto);
+        margin: 0 auto;
+
+        .producto__titulo {
+            font-size: 2rem;
+        }
+
+        .contenedor__precio-meta {
+            @include width-height(100%, 15rem);
+        }
+
+        .producto__carrito {
+            @include width-height (100%, auto);
+            @include d__flex(column, flex-start, flex-start);
+            column-gap: 0;
+            row-gap: .5rem;
+        }
+
+        .producto__boton-añadir, .boton__añadir{
+            @include width-height(100%, auto);
+        }
+
+    }
+}
+
+.contenedor__extras {
+    @include width-height(90%, auto);
+    
+}
+
+.contenedor__des-info-val {
+    width: 100%;
+}
+
+.contenedor__list {
+    @include width-height(100%, auto);
+    flex-direction: column;
+    column-gap: .5rem;
+    align-items: baseline;
+    justify-content: center;
+}
+
+
+.val {
+
+    padding: 1rem 0;
+
+    &__card {
+        @include width-height (100%, 16rem);
+        @include d__flex (column, center, center);
+        gap: 0;
+    }
+
+    &__comentarios {
+        @include d__flex(column, center, center);
+    }
+}

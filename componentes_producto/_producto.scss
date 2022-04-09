@@ -1,0 +1,310 @@
+.main__producto {
+    margin-top: 87px;
+}
+
+.contenedor__producto {
+    display: grid;
+    @include d__grid-repeart(2, 1fr, auto);
+    @include width-height(100%, 100%);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+    column-gap: 2rem;
+}
+
+// columna 1
+.producto__col-1 {
+    @include width-height(100%, auto);
+    font-size: 0;
+}
+
+.productos__imagen {
+    @include width-height(500px, 500px);
+    position: relative;
+    margin: 0 auto;
+}
+
+.producto__imagen1, .producto__imagen2, .producto__imagen3 {
+    @include width-height(100%, 100%);
+    position: absolute;
+    top: 0;
+}
+
+.producto__imagen2, .producto__imagen3 {
+    display: none;
+}
+
+.labels__imagenes {
+    @include width-height(500px, auto);
+    margin: 1rem auto 0;
+    display: flex;
+    column-gap: .5rem;
+}
+
+.imagen__label {
+    @include width-height(90px, 90px);
+}
+
+#imagen2:checked ~ .productos__imagen > .producto__imagen2 {
+    display: block;
+} 
+
+#imagen2:checked ~ .productos__imagen > .producto__imagen1 {
+    display: none;
+} 
+
+#imagen3:checked ~ .productos__imagen > .producto__imagen3 {
+    display: block;
+}
+
+#imagen3:checked ~ .productos__imagen > .producto__imagen1 {
+    display: none;
+}
+
+.label__img1 {
+    @include width-height(90px, 90px);
+    display: inline-block;
+    background: url(../img/img-anillos/8268-A20021048-61f9e92db162d-1.jpg) center / contain;
+}
+
+.label__img2 {
+    @include width-height(90px, 90px);
+    display: inline-block;
+    background: url(../img/img-anillos/producto/3094-A20012048-60476b8b80c5c-1.jpg) center / contain;
+}
+
+.label__img3 {
+    @include width-height(90px, 90px);
+    display: inline-block;
+    background: url(../img/img-anillos/producto/3094-A20012048-60476b8b80c5c.jpg) center / contain;
+}
+
+// columna 2
+.producto__col-2 {
+    @include width-height(100%, auto);
+    @include d__flex(column,space-between,flex-star);
+
+    .producto__titulo {
+        font-size: 3rem;
+        font-weight: 300;
+        color: $color-amarillo;
+    }
+
+    .producto__meta, .producto__strong {
+        color: $color-negro;
+    }
+
+    .separacion {
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .contenedor__precio-meta {
+        @include width-height(100%, 20rem);
+        @include d__flex(column,space-around,flex-star);
+    }
+
+    .producto__precio {
+        font-size: 2rem;
+
+        .producto__strong {
+            color: #010101;
+            font-weight: 500;
+        }
+    }
+
+    .producto__descripcion {
+        font-size: 1.1rem;
+        color: $color-negro;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .producto__texto {
+        color: $color-negro;
+    }
+
+    .producto__carrito {
+        @include d__flex(row, flex-start, center);
+        @include width-height(100%, 70px);
+        column-gap: 2rem;
+    }
+
+    .producto__boton{
+        background-color: $color-blanco;
+    }
+
+    .producto__boton[value] {
+        color: $color-negro;
+    }
+
+    .producto__cantidad {
+        text-align: center;
+        padding-left: .8rem;
+        padding-right: 0;
+    }
+
+    .boton__añadir {
+        text-transform: uppercase;
+        color: $color-blanco;
+        background-color: $color-amarillo;
+        border: 1px solid $color-amarillo;
+        cursor: pointer;
+        letter-spacing: 1px;
+    }
+
+}
+    // prueba seccion descripcion
+    .input__none {
+        display: none;
+    }
+
+    .info, .val {
+        display: none;
+    }
+    
+    #hola2:checked ~ div > .info{
+        display: block;
+    }
+
+    #hola2:checked ~ div > .des {
+        display: none;
+    }
+
+    #hola3:checked ~ div > .val {
+        display: block;
+    }
+
+    #hola3:checked ~ div > .des {
+        display: none;
+    }
+
+
+    // contenedor
+
+    .contenedor__extras {
+        @include width-height(100%, auto);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .contenedor__des-info-val {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contenedor__list {
+        display: flex;
+        column-gap: 1rem;
+        padding: .5rem 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .lists {
+        color: $color-negro;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            display: block;
+            @include width-height (0, 2px);
+            background-color: $color-amarillo;
+            transition: all 1s ease;
+            margin-bottom: .2rem;
+        }
+
+        &:hover::before {
+            @include width-height (100%, 2px);
+        }
+
+
+    }
+
+    .des {
+
+        margin-top: 1rem;
+
+        &__items {
+            padding-left: 1.5rem;
+            line-height: 2.2rem;
+        }
+    }
+
+    .info {
+
+        margin-top: 1rem;
+
+        &__table {
+            @include width-height (100%, auto);
+            border: 1px solid black;
+            border-collapse: collapse; // Quita separacion de bordes internos en tabla
+            
+        }
+
+        &__th {
+            @include width-height (15%, auto);
+            border-right: 1px solid black;
+            padding: .5rem;
+
+            &--borde-bottom {
+                border-bottom: 1px solid black;
+            }
+        }
+
+        &__td {
+            padding-left: .5rem;
+
+            &--borde-bottom {
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+
+    .val {
+
+        margin-top: 1rem;
+
+        &__card {
+            @include width-height (60%, 9rem);
+            @include d__flex(row, flex-star, center);
+            gap: 1.5rem;
+            padding: 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        &__imagen {
+            display: grid;
+
+            &-persona {
+                width: 90px;
+                border-radius: 50%;
+            }
+        }
+
+        &__comentarios {
+            @include width-height (100%, 100%);
+            position: relative;
+            @include d__flex(column, flex-start, flex-start);
+            gap: .8rem;
+            padding-top: .5rem;
+        }
+
+        &__comentario {
+            font-size: .9rem;
+        }
+
+        &__fecha {
+            position: absolute;
+            bottom:  0;
+            right: 0;
+            font-size: .8rem;
+            color: $color-negro;
+        }
+    }
+
+
+
+
