@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 577px) {
     .main__producto {
         margin-top: 50px;
     }
@@ -57,8 +57,8 @@
         }
 
     }
-}
 
+    
 .contenedor__extras {
     @include width-height(90%, auto);
     
@@ -70,12 +70,13 @@
 
 .contenedor__list {
     @include width-height(100%, auto);
-    flex-direction: column;
+    @include d__flex (column, center, baseline);
     column-gap: .5rem;
-    align-items: baseline;
-    justify-content: center;
 }
 
+.contenedor__list {
+    @include d__flex (column, center, flex-start);
+}
 
 .val {
 
@@ -90,4 +91,6 @@
     &__comentarios {
         @include d__flex(column, center, center);
     }
+}
+
 }

@@ -190,12 +190,14 @@
     }
 
     .contenedor__des-info-val {
-        width: 90%;
+        @include width-height(90%, auto);
         margin: 0 auto;
+        
     }
 
     .contenedor__list {
-        display: flex;
+        @include width-height (100%, auto);
+        @include d__flex (row, flex-start, center);
         column-gap: 1rem;
         padding: .5rem 0;
         border-top: 1px solid rgba(0, 0, 0, 0.3);
@@ -268,7 +270,7 @@
 
         &__card {
             @include width-height (60%, 9rem);
-            @include d__flex(row, flex-star, center);
+            @include d__flex(row, flex-start, center);
             gap: 1.5rem;
             padding: 1rem;
             border: 1px solid rgba(0, 0, 0, 0.1);
