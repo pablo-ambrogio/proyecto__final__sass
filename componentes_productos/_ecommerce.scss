@@ -14,7 +14,6 @@
 .categorias {
     grid-area: categorias;
     @include width-height(100%, auto);
-    // background-color: moccasin;
     padding-top: 1.2rem;
 
     &__productos {
@@ -24,6 +23,11 @@
     &__miga-pan {
         @include width-height(100%, auto);
     }
+}
+
+.position__sticky {
+    position: sticky;
+    top: 6rem;
 }
 
 .anclas__miga-pan {
@@ -40,8 +44,6 @@
 }
 .categoria__buscar-input {
     @include width-height(100%, 2.5rem);
-    // width: 100%;
-    // height: 2.5rem;
     padding-left: 2.5rem;
     background: url(../img/iconos/icons8-búsqueda.svg) no-repeat 1rem;
     background-size: 1.1rem;

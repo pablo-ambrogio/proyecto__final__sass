@@ -798,6 +798,11 @@ body {
   height: auto;
 }
 
+.position__sticky {
+  position: sticky;
+  top: 6rem;
+}
+
 .anclas__miga-pan {
   font-size: 0.9rem;
   color: #3b8284;
@@ -1945,6 +1950,10 @@ body {
     padding-top: 0.8rem;
   }
 
+  .position__sticky {
+    position: static;
+  }
+
   .productos {
     width: 90%;
     height: auto;
@@ -2141,7 +2150,7 @@ body {
     height: auto;
   }
 }
-@media screen and (max-width: 577px) {
+@media screen and (max-width: 767px) {
   .main__producto {
     margin-top: 50px;
   }
@@ -2201,10 +2210,14 @@ body {
     align-items: flex-start;
     column-gap: 0;
     row-gap: 0.5rem;
+    margin-top: 0.5rem;
   }
   .producto__col-2 .producto__boton-añadir, .producto__col-2 .boton__añadir {
     width: 100%;
     height: auto;
+  }
+  .producto__col-2 .producto__cantidad {
+    padding-right: 0.8rem;
   }
 
   .contenedor__extras {

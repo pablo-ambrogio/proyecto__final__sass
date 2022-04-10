@@ -50,10 +50,15 @@
             @include d__flex(column, flex-start, flex-start);
             column-gap: 0;
             row-gap: .5rem;
+            margin-top: .5rem;
         }
 
         .producto__boton-añadir, .boton__añadir{
             @include width-height(100%, auto);
+        }
+
+        .producto__cantidad {
+            padding-right: .8rem;
         }
 
     }
