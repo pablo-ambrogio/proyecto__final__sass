@@ -43,7 +43,7 @@
     }
 
     .producto {
-        background-color: magenta;
+        // background-color: magenta;
 
         &__contenedor-img {
             @include width-height (95%, 95%);
