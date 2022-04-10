@@ -2159,7 +2159,7 @@ body {
     margin-top: 50px;
   }
 
-  .contenedor__producto {
+  .contenedor__producto-view {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
