@@ -1074,7 +1074,7 @@ body {
 .preguntas {
   width: 100%;
   height: 20rem;
-  background: url(../img/preguntas/pexels-godisable-jacob-1191531.jpg) no-repeat center center;
+  background: url(../img/preguntas/pexels-godisable-jacob-1191531.jpg) no-repeat center;
 }
 .preguntas__texto {
   text-transform: uppercase;
@@ -1105,6 +1105,7 @@ body {
   height: auto;
   border: 1px solid #7b6281;
   margin: 0 auto 1rem auto;
+  border-radius: 3px;
 }
 .card__titulo {
   width: 100%;
@@ -1178,7 +1179,7 @@ body {
   margin-top: 87px;
 }
 
-.contenedor__producto {
+.contenedor__producto-view {
   display: grid;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1976,6 +1977,9 @@ body {
     padding: 1.2rem 0;
   }
 
+  .producto {
+    background-color: magenta;
+  }
   .producto__contenedor-img {
     width: 95%;
     height: 95%;

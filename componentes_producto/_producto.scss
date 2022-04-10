@@ -2,7 +2,7 @@
     margin-top: 87px;
 }
 
-.contenedor__producto {
+.contenedor__producto-view {
     display: grid;
     @include d__grid-repeart(2, 1fr, auto);
     @include width-height(100%, 100%);

@@ -7,7 +7,7 @@
 .preguntas {
     @include width-height(100%, 20rem);
     @extend %d-flex__row;
-    background: url(../img/preguntas/pexels-godisable-jacob-1191531.jpg) no-repeat center center; 
+    background: url(../img/preguntas/pexels-godisable-jacob-1191531.jpg) no-repeat center; 
 
     &__texto {
         text-transform: uppercase;
@@ -25,7 +25,6 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 3rem 0;
-    // background-color: moccasin;
 }
 
 .card__texto-ayuda {
@@ -38,12 +37,11 @@
     @include width-height(80%, auto);
     border: 1px solid rgb(123, 98, 129);
     margin: 0 auto 1rem auto;
-    // background-color: mediumpurple;
+    border-radius: 3px;
 
     &__titulo {
         @include width-height(100%, auto);
         @include d__flex(row, space-between, center);
-        // font-size: 0;
         padding: 1.2rem 1rem;
     }
     
@@ -55,16 +53,13 @@
 
     &__textos {
         @include width-height(100%, 0);
-        // display: none;
         padding: 0 1rem;
-        // background-color: mediumseagreen;
         overflow: hidden;
         transition: height .8s ease-in-out;
     }
 
     &__items {
         padding-top: .8rem;
-        // background-color: mediumpurple;
     }
 
     &__item {
@@ -82,7 +77,6 @@
 
     display: none;
     &:checked ~ .card__textos {
-        // border-top: 1px solid rgb(123, 98, 129);
         @include width-height(100%, 12rem);
         
     }
