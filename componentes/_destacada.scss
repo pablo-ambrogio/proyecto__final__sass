@@ -91,7 +91,12 @@
             @include width-height (inherit, 200px);
             position: relative;
 
-            img {
+            &--ancla {
+                display: block;
+                @include width-height(inherit, 100%);
+            }
+
+            .imagen {
                 @include width-height (inherit, inherit);
             }
 
@@ -123,8 +128,7 @@
 // hover en producto
 .imagen__hover {
     position: absolute;
-    width: inherit;
-    height: inherit;
+    @include width-height(inherit, inherit);
     // background-color: transparent;
     display: flex;
     align-items: flex-end;
@@ -132,13 +136,12 @@
     top: 0;
     left: 0;
     
-
     overflow: hidden;
 
     .heart {
         background-color: $color-amarillo;
         padding: .5rem;
-        height: 2.5rem;
+        // height: 2.5rem;
         position: absolute;
         bottom: -21%;
         left: 0;
@@ -199,6 +202,10 @@
             color: $color-blanco;
         }
     }
+
+    // .heart__link, .search__link {
+    //     display: inline-block;
+    // }
 
     &:hover .heart, &:hover .añadir-carrito, &:hover .search {
         // top: 0;

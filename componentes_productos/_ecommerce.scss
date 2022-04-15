@@ -95,6 +95,12 @@
 
     &__contenedor-img {
         @include width-height (250px, 250px);
+
+        .producto__ancla {
+            display: inline-block;
+            @include width-height(inherit,inherit);
+            background-color: mediumpurple;
+        }
     }
 
     &__img {
